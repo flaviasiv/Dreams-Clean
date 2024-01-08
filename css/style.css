@@ -143,14 +143,6 @@ position: absolute;
 }
 @media only screen and (max-width: 1000px) {
     .nonebar{display: none}
-    .logo-m{
-    z-index: 9;
-    display:block;
-    width: 65px;
-    top: 10px;
-    left: 25px;
-    position: absolute;
-    }
   .box{
     width: fit-content;
     height: 0vh;
@@ -208,19 +200,6 @@ position: absolute;
   }
   .active .line3{
     transform: translate(0px , 1px)rotate(-45deg);
-  }
-  .imglogo-m{
-      position: absolute;
-      display: block;
-      z-index: 999;
-      left: 1.9rem;
-      top: 0.6rem;
-  }
-  .imglogo-m img{
-      width: 100%;
-      max-width: 70px;
-      margin: auto;
-      padding: 0px;
   }
   .menu-links{
     background-color: #0C1B32;
@@ -402,15 +381,21 @@ position: absolute;
     position: relative;
     display: flex;
     width: 100%;
-    max-width: 3290px;
+    max-width: 9990px;
     height: 100%;
-    max-height: 1140px;
+    min-height: 1000px;
+    max-height: 1990px;
     margin: auto;
     background-color: #0C1B32;
 }
 .aboutimg{
+    display: flex;
     width:100%;
     max-width: 820px;
+    margin: auto;
+}
+.aboutimg img{
+    max-width: 800px;
     margin: auto;
 }
 .about{
@@ -479,18 +464,20 @@ position: absolute;
 }*/
 @media screen and (max-width:1150px) {
     .aboutcontainer{
-        height:547;
+        min-height: 0;
+        max-height: 1000px;
     }
-    .bgs-web-aboutt{
-        max-width: 620;
+    .aboutimg{
+        display: flex;
+    }
+    .aboutimg img{
+        max-width: 650px;
+        margin: auto;
     }  
-    .abouttext{ 
-        margin: 30 20 0 0;
-    }
 }
 @media screen and (max-width:1090px) {
     .aboutcontainer{
-        height:1300;
+        max-height: 1140px;
         z-index: 99;
     }
     .abouttext{ 
@@ -534,6 +521,8 @@ position: absolute;
     background-color: #F3F3F3;
     width: 100%;
     max-width: 3290px;
+    height: 100%;
+    max-height: 600px;
     margin: auto;
 }
 .services{
@@ -603,12 +592,13 @@ position: absolute;
 }
 .thefront img{
   border-radius: 30px;
-
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
 .theback{
   position: absolute;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   width: 100%;
@@ -618,14 +608,14 @@ position: absolute;
   backface-visibility: hidden;
   overflow: hidden;
   background: #0C1B32;
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
   transform: rotateY(180deg);
 }
 
 
 /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-.thefront h2, .theback h2{
+.theback h2{
   color: #E0B451;
   margin-bottom: 30px;
   font-size: 12px;
@@ -633,16 +623,40 @@ position: absolute;
   font-weight: 900;
   line-height: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
-.thefront p, .theback p{
+.theback p{
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
   color: #FFF;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 25px;
 }
 /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+@media screen and (max-width:1550px) {
+    .maincontainer{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        max-width: 730px;
+    }
+    .maincontainer > div {
+        flex: 50%; 
+    }
+    .thecard{
+        margin-right: 20px;
+    }
+    .servicescontainer{
+        max-height: 990px;
+    }
+}
 @media screen and (max-width:790px) {
     .servicescontainer{
     padding: 100 0 0 0;
@@ -652,6 +666,9 @@ position: absolute;
         padding: 0 40;
         font-size:14px;
         margin-bottom: 40px;
+    }
+    .maincontainer > div {
+        flex: 50%; 
     }
     
 }
@@ -729,7 +746,7 @@ position: absolute;
     margin-top: 32px;
     color: #fff;
     width: 180px;
-}/* 
+}
 @media screen and (max-width: 1299px) {
     .preferencecontainer{
         max-height: 565;
@@ -774,7 +791,7 @@ position: absolute;
     font-size: 16px;
     max-width: 350;
 }
-} */
+} 
 @media screen and (max-width: 1070px) {
     .preferencecontainer{
         max-height: 850;
@@ -823,17 +840,16 @@ position: absolute;
 }
 }
 .request{
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 2990px;
     margin: auto;
-    height: 55px;
+    height: 0;
     padding-top: 0;
-    margin-top: -25;
-    position: absolute;
+    margin-top: 0;
     z-index: 99;
 }
 .request a{
@@ -845,7 +861,6 @@ position: absolute;
     padding: 16px 32px;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     border-radius: 72px;
     background: #E0B451;
     color: #070707;
@@ -1130,16 +1145,16 @@ swiper-slide.swiper2 {
     color: #070707;
     margin-top: 15px;
 }
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1280px) {
     .bgs-reviews2{
     position: absolute;
-    max-width: 100;
+    max-width: 70;
     right: 100;
     bottom: 10;
     }
     .bgs-reviews1{
         position: absolute;
-        max-width: 100;
+        max-width: 70;
         top: 50;
         left: 130;
     }
@@ -1153,12 +1168,12 @@ swiper-slide.swiper2 {
         padding: 0;
     }
     .bgs-reviews2{
-        max-width: 50;
+        max-width: 40;
     right: 40;
     bottom: 20;
     }
     .bgs-reviews1{
-        max-width: 70;
+        max-width: 60;
         top: 20;
         left: 40;
     }
