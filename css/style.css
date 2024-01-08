@@ -117,13 +117,13 @@ header {
 .menusocial a:first-child{
     color: #070707;
     font-family: 'Urbanist', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 150%;
     align-items: center;
-    padding: 8px 0px;
-    width: 119px;
+    padding: 6px 0px;
+    width: 129px;
 }
 
 
@@ -136,7 +136,7 @@ header {
 .logo-m{
 z-index: 9;
 display:block;
-width: 55px;
+width: 50px;
 top: 10px;
 left: 25px;
 position: absolute;
@@ -333,19 +333,20 @@ position: absolute;
 .videobg::after {
     content: '';
     inset: 0;
-    background: linear-gradient(0deg, rgba(8, 47, 66, 0.30) 0%, rgba(8, 47, 66, 0.30) 100%), linear-gradient(180deg, rgba(8, 47, 66, 0.00) 0%, #0C1B32 100%);    
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+    /* background: linear-gradient(0deg, rgba(8, 47, 66, 0.30) 0%, rgba(8, 47, 66, 0.30) 100%), linear-gradient(180deg, rgba(8, 47, 66, 0.00) 0%, #0C1B32 100%);  */  
     position: absolute;}
 .videop p{
     color: #fff;
-    width: 358px;
+    width: 453px;
     height: auto;
     margin: auto;
     text-align: center;
     font-family: 'Urbanist';
-    font-size: 40.033px;
-    font-style: normal;
-    font-weight: 400;
+    font-size: 48px;
+    font-weight: 300;
     padding-top: 40px;
+    line-height: 100%;
 }
 /*.videop p span{
     text-decoration:underline#E0B451 6px !important;
