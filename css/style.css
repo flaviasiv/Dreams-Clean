@@ -533,8 +533,6 @@ margin-left: 50px;
     background-color: #F3F3F3;
     width: 100%;
     max-width: 3290px;
-    height: 100%;
-    max-height: 600px;
     margin: auto;
 }
 .services{
@@ -562,13 +560,23 @@ margin-left: 50px;
     margin-top: 16px;
 }
 
+.cardcontainer{
+    background-color: #F3F3F3;
+    width: 100%;
+    max-width: 9500px;
+    margin: auto;
+    height: 100%;
+    max-height: 400px;
+}
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
     display: flex;
+    background-color: #F3F3F3;
     width: 100%;
     max-width: 1500px;
     margin: auto;
-    height: 370px;
+    height: 100%;
+    max-height: 400px;
     padding-left: 70px;
 }
 
@@ -596,8 +604,8 @@ margin-left: 50px;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   max-width: 300px;
+  height: 100%;
   border-radius: 30px;
   backface-visibility: hidden;
   overflow: hidden;
@@ -616,6 +624,7 @@ margin-left: 50px;
   width: 100%;
   max-width: 300px;
   height: 100%;
+  max-height: 370px;
   border-radius: 30px;
   backface-visibility: hidden;
   overflow: hidden;
@@ -653,6 +662,9 @@ margin-left: 50px;
 }
 /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 @media screen and (max-width:1300px) {
+    .cardcontainer{
+        max-height: 870px;
+    }
     .maincontainer{
         display: flex;
         flex-wrap: wrap;
@@ -670,9 +682,8 @@ margin-left: 50px;
     }
 }
 @media screen and (max-width:790px) {
-    .servicescontainer{
-        height: 100%;
-        max-height: 100%
+    .cardcontainer{
+        max-height: 1650px;
     }
     .servicestitle p{
         margin: auto;
@@ -681,16 +692,13 @@ margin-left: 50px;
         margin-bottom: 40px;
     }
     .maincontainer{
+        display: block;
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
         padding: 0;
         text-align: center;
-    }
-    .thecard{
-        height: 300px;
-    }
-    
+    }    
 }
 .preferencecontainer{
     width: 100%;
@@ -781,7 +789,7 @@ margin-left: 50px;
     }
     .preference{
         margin: auto;
-        padding: 0;
+        padding: 50 0;
     }
 .preferenceprinc {
     display: flex;
@@ -820,6 +828,9 @@ margin-left: 50px;
     max-width: 190;
     text-align: center;
     margin: 20 auto 0 auto;
+}
+.preferencecontainer .preferencebgm{
+    max-height: 825px;
 }
 }
 .request{
@@ -994,7 +1005,7 @@ swiper-slide.swiper2 {
     width: 100%;
     max-width: 3290px;
     margin: 0 auto;
-    padding: 0 0 190px 0;
+    padding: 0 0 150px 0;
 }
 swiper-container.mySwiper2 {
   max-height: 430px;
@@ -1021,7 +1032,7 @@ swiper-slide.swiper2 {
     display: block;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,820%);
+    transform: translate(-50%,1000%);
 }
 }
 .reviewscontainer{
@@ -1316,21 +1327,6 @@ form {
     line-height: 150%;
 }
 @media screen and (max-width:1300px) {
-    .bgs-web{
-        display: none;
-    }
-    .bgs-mob{
-        display: block;
-        pointer-events: none;
-        position: absolute;
-        width: 100%;
-        object-fit: cover;
-        max-width: 2999px;
-        height: 100%;
-        max-height: 1300;
-        flex-shrink: 0;
-        z-index: 0;
-    }
     .formimgsbg{
         display: none;
     }
@@ -1611,6 +1607,21 @@ footer{
 }
 .footerimglogo2{display:none;}
 @media screen and (max-width: 770px) {
+    .bgs-web{
+        display: none;
+    }
+    .bgs-mob{
+        display: block;
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        max-width: 2999px;
+        height: 100%;
+        max-height: 1300;
+        flex-shrink: 0;
+        z-index: 0;
+    }
     footer{
         position: relative;
         width: 100%;
