@@ -819,7 +819,7 @@ margin-left: 50px;
     margin: 20 auto 0 auto;
 }
 .preferencecontainer .preferencebgm{
-    max-height: 825px;
+    max-height: 850px;
 }
 }
 .request{
@@ -864,7 +864,7 @@ margin-left: 50px;
 @media screen and (max-width:790px) {
 .request{
     padding-top: 0;
-    margin-top: -25;
+    margin-top: 0;
 }
 .request a{
     width: 189px;
