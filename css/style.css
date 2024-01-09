@@ -370,12 +370,13 @@ margin-left: 50px;
     .videop{
         flex-direction: column;
         padding: 0;
-        top: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     .videop p{
-        max-width:269px;
+        max-width:100%;        
+        font-size: 35.122px;
         padding-top: 30px;
         line-height: 1.1;
     }
