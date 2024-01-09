@@ -480,24 +480,11 @@ margin-left: 50px;
         margin: auto;
     }  
 }
-/*@media screen and (max-width:1090px) {
-    .aboutcontainer{
-        max-height: 1140px;
-        z-index: 99;
-    }
-    .abouttext{ 
-        max-width: 788px;
-        margin: 30 40 0 40;
-    }
-    .bgs-web-aboutt{
-        max-width: 1220px;
-        margin: auto;
-    }  
-}*/
 @media screen and (max-width:790px) {
     .aboutcontainer{
         height:100%;
-        max-height: 1922px;
+        min-height: 900px;
+        max-height: 1202px;
     }
     .about{
         background-color: #0C1B32;
