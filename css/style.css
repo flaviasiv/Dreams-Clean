@@ -62,7 +62,7 @@ header {
     justify-content: space-between;
     align-items: center;   
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     align-items: center;  
 }
@@ -140,7 +140,7 @@ width: 50px;
 top: 10px;
 left: 25px;
 position: absolute;
-margin-left: 50px;
+margin-left: 25px;
 }
 @media only screen and (max-width: 1000px) {
     .nonebar{display: none}
@@ -562,11 +562,11 @@ margin-left: 50px;
     display: flex;
     background-color: #F3F3F3;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1350px;
     margin: auto;
     height: 100%;
     max-height: 400px;
-    padding-left: 70px;
+    padding-left: 20px;
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
@@ -618,7 +618,7 @@ margin-left: 50px;
   backface-visibility: hidden;
   overflow: hidden;
   background: #0C1B32;
-  padding: 40px 20px;
+  padding: 30px 20px;
   text-align: center;
   transform: rotateY(180deg);
 }
@@ -641,12 +641,13 @@ margin-left: 50px;
 .theback p{
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 130%;
   color: #FFF;
   display: flex;
   flex-direction: column;
   margin: auto;
+  text-align: center;
   margin-top: 25px;
 }
 /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
@@ -1218,6 +1219,7 @@ swiper-slide.swiper2 {
 .logoform{
     margin: auto;
     max-width: 266px;
+    text-align: center;
     margin-bottom: 0px;
 }
 .form h2{
@@ -1226,6 +1228,7 @@ swiper-slide.swiper2 {
     font-weight: 700;
     line-height: 100%;
     margin: 40px auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -1241,6 +1244,7 @@ swiper-slide.swiper2 {
     font-weight: 400;
     line-height: 130%; 
     letter-spacing: 0.64px;
+    text-align: center;
 }
 form {
     width: 100%;
@@ -1326,7 +1330,21 @@ form {
     font-weight: 500;
     line-height: 150%;
 }
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1570px) {
+    .formbgm{
+            display: block;
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            object-fit: cover;
+            max-width: 2999px;
+            height: 100%;
+            max-height: 1300;
+            flex-shrink: 0;
+            z-index: 0;
+        }
+}
+@media screen and (max-width:1250px) {
     .formimgsbg{
         display: none;
     }
@@ -1343,7 +1361,7 @@ form {
     .form{
         width: 370px;
         height: 900px;
-        margin: 0 auto;
+        margin: 50 auto;
     }
     .form h2{
         font-size: 32;
@@ -1503,7 +1521,7 @@ footer{
     max-width: 1440px;
     margin: auto;
     justify-content: space-between;
-    padding: 50px 50px 0 0;
+    padding: 50px 50px 0 50px;
 }
 .footermenu{
     display: flex;
