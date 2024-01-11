@@ -132,7 +132,7 @@ header {
   transition: 0.5s ease-out;
   letter-spacing: 1.2px;
 }
-.btn-toggle{display: none;}
+.btn-toggle, .contactm{display: none;}
 .logo-m{
 z-index: 9;
 display:block;
@@ -144,6 +144,8 @@ margin-left: 25px;
 }
 @media only screen and (max-width: 1000px) {
     .nonebar{display: none}
+    .contactw{display: none;}
+    .contactm{display: block;}
   .box{
     width: fit-content;
     height: 0vh;
