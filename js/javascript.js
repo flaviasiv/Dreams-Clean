@@ -32,3 +32,13 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+//cards flip ao clicar
+
+var cards = document.querySelectorAll('.card');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});

@@ -528,7 +528,7 @@ margin-left: 25px;
     width: 100%;
     max-width: 3900px;
     margin: auto;
-    padding: 70 0 50 0;
+    padding: 0 0 50 0;
 }
 .servicestitle{
     font-family: 'Urbanist', sans-serif;
@@ -544,6 +544,7 @@ margin-left: 25px;
     font-weight: 700;
     line-height: 100%;
     margin-bottom: 60px;
+    padding-top: 70px;
 }
 .servicestitle h2 svg{
     margin-top: 16px;
@@ -555,7 +556,7 @@ margin-left: 25px;
     max-width: 9500px;
     margin: auto;
     height: 100%;
-    max-height: 400px;
+    max-height: 470px;
 }
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
@@ -566,25 +567,22 @@ margin-left: 25px;
     margin: auto;
     height: 100%;
     max-height: 400px;
-    padding-left: 20px;
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
-.thecard{
+.card{
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   max-width: 300px;
   height: 100%;
-  transform-style: preserve-3d;
+  margin: auto;
   transition: all 0.8s ease;
-  margin-right: 50px;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
 .thecard:hover{
-  transform: rotateY(180deg);
 }
 
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
@@ -599,8 +597,11 @@ margin-left: 25px;
   backface-visibility: hidden;
   overflow: hidden;
 }
-.thefront img{
+.thefront img, .card__face--front img{
   border-radius: 30px;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
@@ -613,14 +614,12 @@ margin-left: 25px;
   width: 100%;
   max-width: 300px;
   height: 100%;
-  max-height: 370px;
   border-radius: 30px;
   backface-visibility: hidden;
   overflow: hidden;
   background: #0C1B32;
   padding: 30px 20px;
   text-align: center;
-  transform: rotateY(180deg);
 }
 
 
@@ -691,6 +690,35 @@ margin-left: 25px;
         text-align: center;
     }    
 }
+  .scene {
+    display: inline-block;
+    perspective: 600px;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+  
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  
+  .card__face--front {
+  }
+  
+  .card__face--back {
+    transform: rotateY(180deg);
+  }
+  
+
 .preferencecontainer{
     width: 100%;
     max-width: 2990px;
@@ -1195,7 +1223,6 @@ swiper-slide.swiper2 {
 }
 .bgs-mob{display: none;}
 
-
 .formgrid{
     display: flex;
     position: relative;
@@ -1343,7 +1370,7 @@ form {
             flex-shrink: 0;
             z-index: 0;
         }
-}
+}/*
 @media screen and (max-width:1250px) {
     .formimgsbg{
         display: none;
@@ -1425,9 +1452,9 @@ form {
         display: flex;
         gap: 20px;
     }
-}
+}*/
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:1290px) {
     .formimgsbg{
         display: none;
     }
@@ -1608,7 +1635,7 @@ footer{
     width: 100%;
     max-width: 9990px;
     margin: auto;
-    padding: 34px 0 50px 09;
+    padding: 34px 0 50px 0;
     background-color: #0C1B32;
     align-items: center;
     text-align: center;    
