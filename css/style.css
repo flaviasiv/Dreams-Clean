@@ -54,7 +54,7 @@ header {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    padding: 20px 50px 5px 0px;
+    padding: 13px 50px 5px 50px;
 } 
 .menu-links{
     color:#fff;
@@ -75,7 +75,6 @@ header {
     text-align: center;
 }
 .menu-linksbtn a {
-    display:block;
     display:block;
     text-align: center;
     color:#fff;
@@ -98,15 +97,23 @@ header {
     list-style: none;
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    justify-content:space-between;
-    width:200px;
     text-align: center;
+    justify-content:space-between;
+    align-items: center;
+    width:230px;
+    margin: 0 auto;
 }
-.menusocial ul a {
+.menusocial ul li a {
+    display: inline;
     text-decoration:none;
     cursor: pointer;
+    justify-content: center;
     align-items: center;
+}
+.menusocial li a img{
+    width: 25px;
+    margin: auto;
+    margin-top: 3px;
 }
 .menusocial li:first-child{
     display: inline-flex;
@@ -126,6 +133,30 @@ header {
     width: 129px;
 }
 
+.bnts-logo{
+    display: flex;
+}
+.callnow{
+    display: flex;
+    flex-direction: column;
+    color: #082F42;
+    background-color: #fff;
+    border-radius: 30px;
+    justify-content: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    padding: 8px 10px;
+    width: 130px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.callnow p{
+    font-size: 14px;
+}
 
 .menu-linksbtn a:hover,
 .menu-linksbtn a.active {
@@ -136,16 +167,21 @@ header {
 .logo-m{
 z-index: 9;
 display:block;
-width: 50px;
-top: 10px;
-left: 25px;
-position: absolute;
-margin-left: 25px;
+width: 100%;
+max-width: 50px;
 }
+.call-m{display: none;}
 @media only screen and (max-width: 1000px) {
     .nonebar{display: none}
     .contactw{display: none;}
     .contactm{display: block;}
+    .bnts-logo{display: none}
+    .call-m{
+        display: block;
+        position: absolute;
+        z-index: 99;
+        top: 5%;
+    }
   .box{
     width: fit-content;
     height: 0vh;
@@ -215,7 +251,7 @@ margin-left: 25px;
   padding-top: 50px;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  height:290px
+  height:270px
   }
   .menu-links ul{
       display: block;
@@ -236,8 +272,11 @@ margin-left: 25px;
       margin: auto;
       margin-bottom: 10px;
   }
-  .menusocial ul li:last-child{
-      margin-left:5;
+  .menusocial ul li{
+    margin-left:5;
+  }
+  .menusocial ul li:first-child{
+      margin-left:0;
   }
   .menusocial ul a {
       text-decoration:none;
@@ -920,7 +959,7 @@ text-align: center;
     width: 100%;
     max-width: 3290px;
     margin: auto;
-    padding: 70px 0px;
+    padding: 70px 0 0;
     height: auto;
     margin-bottom: 20;
 }
@@ -991,7 +1030,7 @@ swiper-slide.swiper2 {
         width: 100%;
         max-width: 3290px;
         margin: 0 auto;
-        padding: 0 0 190px 0;
+        padding: 0 0 90px 0;
     }
     swiper-container.mySwiper2 {
       max-height: 550px;
@@ -1021,13 +1060,6 @@ swiper-slide.swiper2 {
     }    
 }
 @media screen and (max-width:790px) {
-.portifoliocontainer{
-    background-color: #fff;
-    width: 100%;
-    max-width: 3290px;
-    margin: 0 auto;
-    padding: 0 0 200px 0;
-}
 swiper-container.mySwiper2 {
   max-height: 430px;
   cursor: grab;
@@ -1056,6 +1088,47 @@ swiper-slide.swiper2 {
     top: 50%;
     transform: translate(-50%,1000%);
 }
+}
+/* IG CONTAINER */
+.ig-embed{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 9999px;
+    margin: auto;
+    padding: 80px 0;
+}
+.ig-embed h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 32px;
+}
+.ig-embed h2 span{
+    margin-top: 30px;
+}
+.ig-embed iframe{
+    width:900px; 
+    height:820px;
+}
+@media screen and (max-width:980px) {
+    .ig-embed iframe{
+        width:500px; 
+        height:530px;
+    }    
+}
+@media screen and (max-width:580px) {
+    .ig-embed iframe{
+        width:100%;
+        max-width: 400px; 
+        height: 480px;
+    }    
 }
 .reviewscontainer{
     position: relative;
@@ -1188,7 +1261,7 @@ swiper-slide.swiper2 {
     }
     
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 590px) {
     .review{
         width: 100%;
         max-width: 1340px;
@@ -1207,8 +1280,14 @@ swiper-slide.swiper2 {
     }
     .mySwiper3{
       margin: 50 0 !important;
-      max-height: 340;
-
+      max-height: 340px;
+    }
+    .swiper3 {
+      max-width: 100%;
+      max-height: 300px;
+      margin: auto;
+      margin-left: 0px;
+      margin-bottom: 30px;
     }
 }
 
@@ -1543,11 +1622,16 @@ footer{
     list-style: none;
     display: flex;
     text-align: center;
-    gap: 18px;
+    gap: 10px;
     padding-top: 18px;
 }
 .footersocials ul a{
     text-decoration: none;
+}
+.footersocials ul a img{
+    width: 100%;
+    max-width: 28px;
+    margin: auto;
 }
 .rights{
     position: relative;
