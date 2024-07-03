@@ -566,6 +566,10 @@ max-width: 50px;
     margin: auto;
 }
 .services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 3900px;
     margin: auto;
@@ -573,24 +577,44 @@ max-width: 50px;
 }
 .servicestitle{
     font-family: 'Urbanist', sans-serif;
+    text-align: center;
     color: #070707
 }
 .servicescontainer .servicestitle h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
     font-size: 24px;
     font-weight: 700;
     line-height: 100%;
-    margin-bottom: 60px;
     padding-top: 70px;
 }
 .servicestitle h2 svg{
     margin-top: 16px;
 }
+.services h3{
+    margin-top: 32px;
+    font-size: 20px;
 
+}
+.listareas{
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    justify-content: center;
+    gap: 56px;
+    text-align: left;
+    margin-top: 32px;
+    padding-left: 45px;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 500;
+}
+.listareas ul{
+    text-decoration: dotted;
+}
 .cardcontainer{
     background-color: #F3F3F3;
     width: 100%;
@@ -712,6 +736,13 @@ max-width: 50px;
     }
 }
 @media screen and (max-width:790px) {
+    .listareas{
+        justify-content: center;
+        text-align: left;
+        gap: 28px;
+        font-size: 14px;
+        padding-left: 5px;
+    }
     .cardcontainer{
         min-height: 1600px;
         max-height: 1800px;
