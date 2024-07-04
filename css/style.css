@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Urbanist', sans-serif;
 }
@@ -121,6 +120,9 @@ header {
     background-color: #E0B451;
     border-radius: 20px;
 }
+.menusocial .btn1{
+    border-radius: 20px;
+}
 .menusocial a:first-child{
     color: #070707;
     font-family: 'Urbanist', sans-serif;
@@ -140,7 +142,7 @@ header {
     display: flex;
     flex-direction: column;
     color: #082F42;
-    background-color: #fff;
+    background-color: #E0B451;
     border-radius: 30px;
     justify-content: center;
     font-size: 16px;
@@ -437,13 +439,14 @@ max-width: 50px;
 .aboutimg{
     display: flex;
     width:100%;
-    max-width: 820px;
+    max-width: 920px;
     margin: auto;
 }
-.aboutimg img{
+.aboutimg video{
     width:100%;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
+    border-radius: 30px;
 }
 .about{
     position: relative;
@@ -517,7 +520,7 @@ max-width: 50px;
     .aboutimg{
         display: flex;
     }
-    .aboutimg img{
+    .aboutimg video{
         max-width: 650px;
         margin: auto;
     }  
@@ -554,7 +557,7 @@ max-width: 50px;
         margin: 20 -29 20 -29;
         padding: 10 29;
     }
-    .aboutimg img{
+    .aboutimg video{
         max-width: 350px;
     }  
 }
@@ -615,6 +618,9 @@ max-width: 50px;
 .listareas ul{
     text-decoration: dotted;
 }
+
+
+
 .cardcontainer{
     background-color: #F3F3F3;
     width: 100%;
@@ -656,7 +662,7 @@ max-width: 50px;
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 300px;
+  max-width: 282px;
   height: 100%;
   border-radius: 30px;
   backface-visibility: hidden;
@@ -665,8 +671,8 @@ max-width: 50px;
 .thefront img, .card__face--front img{
   border-radius: 30px;
   width: 100%;
-  max-width: 300px;
-  height: 400px;
+  max-width: 282px;
+  height: 427px;
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
@@ -677,7 +683,7 @@ max-width: 50px;
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   height: 100%;
   border-radius: 30px;
   backface-visibility: hidden;
@@ -732,7 +738,7 @@ max-width: 50px;
         margin-right: 20px;
     }
     .servicescontainer{
-        max-height: 990px;
+        max-height: 1390px;
     }
 }
 @media screen and (max-width:790px) {
@@ -761,6 +767,9 @@ max-width: 50px;
         padding: 0;
         text-align: center;
     }    
+    .servicescontainer{
+        max-height: 2390px;
+    }
 }
   .scene {
     display: inline-block;
@@ -951,11 +960,6 @@ max-width: 50px;
     color: #070707;
     font-size: 18px;
     font-weight: 700;
-}
-.request a:hover,
-.request a.active {
-  transition: 0.5s ease-out;
-  letter-spacing: 1px;
 }
 @media screen and (max-width: 1270px) {
     .request{
@@ -1418,7 +1422,6 @@ form {
 #form button{
     margin-top: 15px;
     width: 120px;
-    border-radius: 5px;
     list-style: none;
     color: #070707;
     border-radius: 16px;
@@ -1428,8 +1431,8 @@ form {
     cursor: pointer;
 }
 #form button:hover{
-    background-color: #E0B451cc;
-    transition: 0.7s;
+    background-color: #fff;
+    transition: 0.2s;
 }
 .form h6{
     display: flex;
@@ -1552,10 +1555,6 @@ form {
         margin: auto;
         background-color: #E0B451;
         cursor: pointer;
-    }
-    #form button:hover{
-        background-color: #E0B451cc;
-        transition: 0.7s;
     }
     .formgroup1, .formgroup2{
         display: flex;
@@ -1820,4 +1819,136 @@ footer{
 }
 :root {
     --scroll: 0
+}
+.btn1:hover{
+    transition: 0.2s ease-in-out;
+    background-color: #FFF;
+}
+
+.popupteste{
+    position: relative;
+    width: 100%;
+    max-width: 9999px;
+    margin: auto;
+}
+.popupgrid{
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 50px 50px 50px;
+}
+.popup .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 1;
+    display: none;
+}
+.popup button{
+    cursor: pointer;    
+    border: none;
+}
+.popup .content{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 880px;
+    height: 520px;
+    z-index: 2;
+    padding: 300px 30px 30px 30px;
+    border-radius: 30px;
+    color: #FFF;
+}
+.popup .close-btn{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    top: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99;
+}
+.popup .content .popttlbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.callnowpopup{
+    margin-left: 0;
+}
+/* .popup.active .overlay{display: block;} */
+.popup.active .content{
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup .content h1{
+    font-size: 32px;
+}
+.popup .content p{
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 150%;
+}
+.popup .content1{
+    background: url(../assets/popup1.png);
+    background-position: 100%;
+    background-size: cover;
+}
+.popup .content2{
+    background: url(../assets/popup2.png);
+    background-position: 100%;
+    background-size: cover;
+}
+.popup .content3{
+    background: url(../assets/popup3.png);
+    background-position: 100%;
+    background-size: cover;
+    padding: 200px 30px 30px 30px;
+}
+.popup .content4{
+    background: url(../assets/popup4.png);
+    background-position: 100%;
+    background-size: cover;
+}
+@media screen and (max-width:1200px) {
+    .popupgrid{
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 700px;
+        row-gap: 20px;
+    }
+    .popupgrid > div{
+        flex: 50%;
+    }
+    .popupteste{
+        display: block;
+        height: 1000px;
+    }
+}
+@media screen and (max-width:900px) {
+    .popup .content{
+        width: 400px;
+        height: 550px;
+        padding: 250px 20px 20px 20px;
+    }
+    .popup .content h1{
+        font-size: 22px;
+    }
+    .popup .content p{
+        max-width: 400px;
+        font-size: 14px;
+        line-height: 120%;
+        margin-left: 10px;
+    }
 }

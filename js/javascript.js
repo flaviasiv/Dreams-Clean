@@ -35,10 +35,86 @@ window.addEventListener("scroll", reveal);
 
 //cards flip ao clicar
 
-var cards = document.querySelectorAll('.card');
+// var cards = document.querySelectorAll('.card');
 
-[...cards].forEach((card)=>{
-  card.addEventListener( 'click', function() {
-    card.classList.toggle('is-flipped');
-  });
-});
+// [...cards].forEach((card)=>{
+//   card.addEventListener( 'click', function() {
+//     card.classList.toggle('is-flipped');
+//   });
+// });
+
+
+// // gallery popup magnific
+// $(document).ready(function() {
+//   $('.parent-container').magnificPopup({
+//       delegate: 'a', // child items selector, by clicking on it popup will open
+//       type: 'image',
+//       // other options
+//       gallery:{enabled:true}
+//     });
+// });
+// $(document).ready(function() {
+//   $('.parent-container2').magnificPopup({
+//       delegate: 'a', // child items selector, by clicking on it popup will open
+//       type: 'image',
+//       // other options
+//       gallery:{enabled:true}
+//     });
+// });
+// $(document).ready(function() {
+//   $('.parent-container3').magnificPopup({
+//       delegate: 'a', // child items selector, by clicking on it popup will open
+//       type: 'image',
+//       // other options
+//       gallery:{enabled:true}
+//     });
+// });
+// $(document).ready(function() {
+//   $('.parent-container4').magnificPopup({
+//       delegate: 'a', // child items selector, by clicking on it popup will open
+//       type: 'image',
+//       // other options
+//       gallery:{enabled:true}
+//     });
+// });
+// $(document).ready(function() {
+//   $('.parent-container5').magnificPopup({
+//       delegate: 'a', // child items selector, by clicking on it popup will open
+//       type: 'image',
+//       // other options
+//       gallery:{enabled:true}
+//     });
+// });
+// $(document).ready(function() {
+//   $('.parent-container6').magnificPopup({
+//       delegate: 'a', // child items selector, by clicking on it popup will open
+//       type: 'image',
+//       // other options
+//       gallery:{enabled:true}
+//     });
+// });
+// $(document).ready(function() {
+//   $('.parent-container7').magnificPopup({
+//       delegate: 'a', // child items selector, by clicking on it popup will open
+//       type: 'image',
+//       // other options
+//       gallery:{enabled:true}
+//     });
+// });
+
+
+
+// popup 
+
+function togglePopupF(){
+  document.getElementById("popup-1").classList.toggle("active")
+}
+function togglePopupS(){
+  document.getElementById("popup-2").classList.toggle("active")
+}
+function togglePopupT(){
+  document.getElementById("popup-3").classList.toggle("active")
+}
+function togglePopupQ(){
+  document.getElementById("popup-4").classList.toggle("active")
+}
