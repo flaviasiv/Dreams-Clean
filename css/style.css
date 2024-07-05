@@ -528,7 +528,7 @@ max-width: 50px;
 @media screen and (max-width:790px) {
     .aboutcontainer{
         height:100%;
-        min-height: 900px;
+        min-height: 1050px;
         max-height: 100%;
     }
     .about{
@@ -623,7 +623,7 @@ max-width: 50px;
 swiper-container.mySwiper1 {
     width: 100%;
     height: 100%;
-    max-width: 1300px;
+    max-width: 900px;
     max-height: 350px;
     cursor: pointer;
     margin: 0 auto !important;
@@ -1926,9 +1926,10 @@ footer{
         padding: 50px 10px ;
     }
     .popup .content{
+        flex-direction: column;
         width: 100%;
-        height: 100%;
-        padding: 250px 20px 20px 20px;
+        height: 520px;
+        padding: 200px 20px 90px 20px;
     }
     .popup .content h1{
         font-size: 22px;
@@ -1937,7 +1938,8 @@ footer{
         max-width: 400px;
         font-size: 14px;
         line-height: 120%;
-        margin-left: 10px;
+        margin-left: 0px;
+        margin-top: 10px;
     }
     .popup .content1{
         background: url(../assets/popup1.png);
@@ -1953,11 +1955,16 @@ footer{
         background: url(../assets/popup3.png);
         background-position: 40%;
         background-size: cover;
-        padding: 200px 30px 30px 30px;
+        padding: 170px 30px 120px 30px;
     }
     .popup .content4{
         background: url(../assets/popup4.png);
         background-position: 40%;
         background-size: cover;
+    }
+    .callnowpopup{
+        position: absolute;
+        margin-left: 0;
+        bottom: 5%;
     }
 }
