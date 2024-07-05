@@ -106,15 +106,15 @@ window.addEventListener("scroll", reveal);
 
 // popup 
 
-function togglePopupF(){
-  document.getElementById("popup-1").classList.toggle("active")
-}
-function togglePopupS(){
-  document.getElementById("popup-2").classList.toggle("active")
-}
-function togglePopupT(){
-  document.getElementById("popup-3").classList.toggle("active")
-}
-function togglePopupQ(){
-  document.getElementById("popup-4").classList.toggle("active")
-}
+// function togglePopupF(){
+//   document.getElementById("popup-1").classList.toggle("active")
+// }
+// function togglePopupS(){
+//   document.getElementById("popup-2").classList.toggle("active")
+// }
+// function togglePopupT(){
+//   document.getElementById("popup-3").classList.toggle("active")
+// }
+// function togglePopupQ(){
+//   document.getElementById("popup-4").classList.toggle("active")
+// }

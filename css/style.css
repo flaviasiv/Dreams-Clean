@@ -620,7 +620,31 @@ max-width: 50px;
 }
 
 
+swiper-container.mySwiper1 {
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    max-height: 500px;
+    cursor: pointer;
+    margin: 0 auto !important;
+  }
+  swiper-slide.swiper1 {
+    max-width: 316px;
+    border-radius: 30px;
+    height: 100%;
+    margin-left: 0px;
+  }
+  .swiper1 img {
+    width: 300px !important;
+    max-width: 100% !important;
+    margin: auto;
+    border-radius: 32px;
+    justify-content: start;
+    object-fit: cover !important;
+    object-position: center;
+  }
 
+/* 
 .cardcontainer{
     background-color: #F3F3F3;
     width: 100%;
@@ -629,7 +653,6 @@ max-width: 50px;
     height: 100%;
     max-height: 470px;
 }
-/* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
     display: flex;
     background-color: #F3F3F3;
@@ -639,8 +662,6 @@ max-width: 50px;
     height: 100%;
     max-height: 400px;
 }
-
-/* THE CARD HOLDS THE FRONT AND BACK FACES */
 .card{
   position: relative;
   top: 0;
@@ -651,13 +672,7 @@ max-width: 50px;
   margin: auto;
   transition: all 0.8s ease;
 }
-
-/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT 
-.thecard:hover{
-}*/
-
-/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
- .thefront{
+.thefront{
   position: absolute;
   top: 0;
   left: 0;
@@ -674,8 +689,6 @@ max-width: 50px;
   max-width: 282px;
   height: 427px;
 }
-
-/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
 .theback{
   position: absolute;
   display: flex;
@@ -692,9 +705,6 @@ max-width: 50px;
   padding: 30px 20px;
   text-align: center;
 }
-
-
-/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 .theback h2{
   color: #E0B451;
   margin-bottom: 30px;
@@ -707,7 +717,6 @@ max-width: 50px;
   flex-direction: column;
   margin: auto;
 }
-
 .theback p{
   font-size: 14px;
   font-style: normal;
@@ -720,7 +729,6 @@ max-width: 50px;
   text-align: center;
   margin-top: 25px;
 }
-/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
 @media screen and (max-width:1300px) {
     .cardcontainer{
         max-height: 870px;
@@ -791,13 +799,13 @@ max-width: 50px;
     transform: translateX(-100%) rotateY(-180deg);
   }
   
-  
-  /* .card__face--front {
-  } */
-  
   .card__face--back {
     transform: rotateY(180deg);
   }
+   */
+  
+  /* .card__face--front {
+  } */
   
 
 .preferencecontainer{
@@ -1593,8 +1601,8 @@ footer{
     line-height: 130%;
 }
 .footermenu ul li a:hover {
-    color: #0cbfdfc5;
-    transition: 0.5s;
+    color: #fff;
+    transition: 0.2s;
 }
 .footermenu ul{
     list-style: none;
@@ -1830,55 +1838,26 @@ footer{
     width: 100%;
     max-width: 9999px;
     margin: auto;    
-    background-color: #F3F3F3;
+    background-color: #fff;
+    padding: 50px;
 }
 .popupgrid{
     display: flex;
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    justify-content: space-between;
-    padding: 0 50px 50px 50px;
-}
-.popup .overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    z-index: 1;
-    display: none;
-}
-.popup button{
-    cursor: pointer;    
-    border: none;
+    justify-content: center;
 }
 .popup .content{
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: space-between;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
     width: 880px;
     height: 520px;
     z-index: 9999;
     padding: 300px 30px 30px 30px;
     border-radius: 30px;
     color: #FFF;
-}
-.popup .close-btn{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 20px;
-    top: 20px;
-    width: 70px;
-    height: 70px;
-    background-color: transparent;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 99;
 }
 .popup .content .popttlbtn{
     display: flex;
