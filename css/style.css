@@ -1825,11 +1825,12 @@ footer{
     background-color: #FFF;
 }
 
-.popupteste{
+.popuptest{
     position: relative;
     width: 100%;
     max-width: 9999px;
-    margin: auto;
+    margin: auto;    
+    background-color: #F3F3F3;
 }
 .popupgrid{
     display: flex;
@@ -1843,7 +1844,7 @@ footer{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: transparent;
+    background-color: #333;
     z-index: 1;
     display: none;
 }
@@ -1852,7 +1853,7 @@ footer{
     border: none;
 }
 .popup .content{
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     top: 50%;
@@ -1860,7 +1861,7 @@ footer{
     transform: translate(-50%, -50%) scale(0);
     width: 880px;
     height: 520px;
-    z-index: 2;
+    z-index: 9999;
     padding: 300px 30px 30px 30px;
     border-radius: 30px;
     color: #FFF;
@@ -1887,7 +1888,7 @@ footer{
 .callnowpopup{
     margin-left: 0;
 }
-/* .popup.active .overlay{display: block;} */
+.popup.active .overlay{display: block;}
 .popup.active .content{
     transition: all 0.3s ease-in-out;
     transform: translate(-50%, -50%) scale(1);
