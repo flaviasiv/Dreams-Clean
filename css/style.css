@@ -943,7 +943,8 @@ swiper-container.mySwiper1 {
     margin: 20 auto 0 auto;
 }
 .preferencecontainer .preferencebgm{
-    max-height: 950px;
+        height: 950px;
+        max-height: 950px;
 }
 }
 .request{
