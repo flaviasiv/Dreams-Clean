@@ -893,22 +893,22 @@ swiper-container.mySwiper1 {
         max-height: 560px;
     }
     .preferencecontainer .preferencebgw{
-        max-height: 560px
+        height: 560px
     }
 }
 @media screen and (max-width: 1070px) {
     .preferencecontainer{
-        max-height: 850;
+        max-height: 900;
     }
     .preference{
         margin: auto;
-        padding: 50 0;
+        padding: 50px 0;
     }
 .preferenceprinc {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    padding: 0 0;
+    padding: 0;
 }
 .bgs-pref{
     max-width: 350;
@@ -943,7 +943,7 @@ swiper-container.mySwiper1 {
     margin: 20 auto 0 auto;
 }
 .preferencecontainer .preferencebgm{
-    max-height: 850px;
+    height: 900px;
 }
 }
 .request{
@@ -1067,6 +1067,7 @@ swiper-slide.swiper2 {
 .licensed{
     position: absolute;
     right: 20%;
+    margin-top: 50px;
 }
 @media screen and (max-width:1290px) {
     .licensed{
@@ -1078,7 +1079,7 @@ swiper-slide.swiper2 {
         width: 100%;
         max-width: 3290px;
         margin: 0 auto;
-        padding: 0 0 90px 0;
+        padding: 90px 0 90px 0;
     }
     swiper-container.mySwiper2 {
       max-height: 550px;
@@ -1099,13 +1100,6 @@ swiper-slide.swiper2 {
       object-fit: cover !important;
       object-position: center;
     }
-    .licensed{
-        position: relative;
-        display: block;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,1199%);
-    }    
 }
 @media screen and (max-width:790px) {
 swiper-container.mySwiper2 {
@@ -1134,7 +1128,8 @@ swiper-slide.swiper2 {
     display: block;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,1000%);
+    transform: translate(-50%,550%);
+    margin-top: 0px;
 }
 }
 /* IG CONTAINER */
