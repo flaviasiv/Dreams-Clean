@@ -955,8 +955,6 @@ swiper-container.mySwiper1 {
     max-width: 2990px;
     margin: auto;
     height: 0;
-    padding-top: 0;
-    margin-top: 0;
     z-index: 99;
 }
 .request a{
@@ -975,16 +973,8 @@ swiper-container.mySwiper1 {
     font-weight: 700;
 }
 @media screen and (max-width: 1270px) {
-    .request{
-        padding-top: 0;
-        margin-top: 0;
-    }
 }
 @media screen and (max-width:790px) {
-.request{
-    padding-top: 0;
-    margin-top: 0;
-}
 .request a{
     width: 189px;
     height: 40px;
@@ -1070,10 +1060,6 @@ swiper-slide.swiper2 {
     margin-top: 50px;
 }
 @media screen and (max-width:1290px) {
-    .licensed{
-        position: absolute;
-        right: 10%;
-    }
     .portifoliocontainer{
         background-color: #fff;
         width: 100%;
@@ -1128,7 +1114,7 @@ swiper-slide.swiper2 {
     display: block;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,550%);
+    transform: translate(-50%,600%);
     margin-top: 0px;
 }
 }
