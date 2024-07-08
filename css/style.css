@@ -888,15 +888,17 @@ swiper-container.mySwiper1 {
     color: #fff;
     width: 180px;
 }
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1570px) {
     .preferencecontainer{
         max-height: 560px;
     }
     .preferencecontainer .preferencebgw{
-        max-height: 560px
+        max-height: 560px;
+        height: 150%;
     }
 }
 @media screen and (max-width: 1070px) {
+    .preferencebgw{display: none;}
     .preferencecontainer{
         max-height: 890px;
     }
