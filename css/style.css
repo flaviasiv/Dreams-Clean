@@ -980,6 +980,17 @@ swiper-container.mySwiper1 {
     padding: 16px 32px;
     font-size: 14px;
 }
+.request{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 2990px;
+    margin: auto;
+    height: 0;
+    z-index: 99;
+}
 }
 
 .portifoliotitle p{
@@ -1063,7 +1074,7 @@ swiper-slide.swiper2 {
         width: 100%;
         max-width: 3290px;
         margin: 0 auto;
-        padding: 90px 0 90px 0;
+        padding: 190px 0 90px 0;
     }
     swiper-container.mySwiper2 {
       max-height: 550px;
