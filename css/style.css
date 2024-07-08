@@ -917,7 +917,7 @@ swiper-container.mySwiper1 {
 .preferencegrid{
     display: flex;
     flex-direction: column;
-    padding-bottom: 0;
+    padding-bottom: 90px;
     padding-top: 10px;
 }
 .preferencecard{
