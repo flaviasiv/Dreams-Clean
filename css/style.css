@@ -981,6 +981,9 @@ swiper-container.mySwiper1 {
     padding: 16px 32px;
     font-size: 14px;
 }
+.request{
+    margin-top: 100px;
+}
 }
 
 .portifoliotitle p{
@@ -1064,7 +1067,7 @@ swiper-slide.swiper2 {
         width: 100%;
         max-width: 3290px;
         margin: 0 auto;
-        padding: 90px 0 90px 0;
+        padding: 200px 0 90px 0;
     }
     swiper-container.mySwiper2 {
       max-height: 550px;
@@ -1778,7 +1781,7 @@ footer{
         justify-content: center;
         gap: 5px;
         padding-top: 8px;
-        margin-left: 19px;
+        margin-left: 0px;
     }
     .footersocials ul a{
         text-decoration: none;
