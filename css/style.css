@@ -898,7 +898,7 @@ swiper-container.mySwiper1 {
 }
 @media screen and (max-width: 1070px) {
     .preferencecontainer{
-        max-height: 900;
+        max-height: 850px;
     }
     .preference{
         margin: auto;
@@ -943,7 +943,7 @@ swiper-container.mySwiper1 {
     margin: 20 auto 0 auto;
 }
 .preferencecontainer .preferencebgm{
-    height: 900px;
+    height: 850px;
 }
 }
 .request{
@@ -980,9 +980,6 @@ swiper-container.mySwiper1 {
     height: 40px;
     padding: 16px 32px;
     font-size: 14px;
-}
-.request{
-    margin-top: 100px;
 }
 }
 
@@ -1067,7 +1064,7 @@ swiper-slide.swiper2 {
         width: 100%;
         max-width: 3290px;
         margin: 0 auto;
-        padding: 200px 0 90px 0;
+        padding: 90px 0 90px 0;
     }
     swiper-container.mySwiper2 {
       max-height: 550px;
@@ -1115,8 +1112,8 @@ swiper-slide.swiper2 {
     position: relative;
     display: block;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,600%);
+    top: 2%;
+    transform: translate(-50%, 0%);
     margin-top: 0px;
 }
 }
