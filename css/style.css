@@ -947,7 +947,7 @@ swiper-container.mySwiper1 {
 }
 }
 .request{
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -958,6 +958,7 @@ swiper-container.mySwiper1 {
     z-index: 99;
 }
 .request a{
+    display: block;
     text-decoration: none;
     display: inline-flex;
     width: 230px;
@@ -979,17 +980,6 @@ swiper-container.mySwiper1 {
     height: 40px;
     padding: 16px 32px;
     font-size: 14px;
-}
-.request{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 2990px;
-    margin: auto;
-    height: 0;
-    z-index: 99;
 }
 }
 
@@ -1074,7 +1064,7 @@ swiper-slide.swiper2 {
         width: 100%;
         max-width: 3290px;
         margin: 0 auto;
-        padding: 190px 0 90px 0;
+        padding: 90px 0 90px 0;
     }
     swiper-container.mySwiper2 {
       max-height: 550px;
@@ -1123,7 +1113,7 @@ swiper-slide.swiper2 {
     display: block;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,650%);
+    transform: translate(-50%,600%);
     margin-top: 0px;
 }
 }
@@ -1332,6 +1322,7 @@ swiper-slide.swiper2 {
 .bgs-web{
     display: block;
     pointer-events: none;
+    position: absolute;
     width: 100%;
     object-fit: cover;
     max-width: 2999px;
@@ -1694,6 +1685,7 @@ footer{
     .bgs-mob{
         display: block;
         pointer-events: none;
+        position: absolute;
         width: 100%;
         object-fit: cover;
         max-width: 2999px;
