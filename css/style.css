@@ -900,8 +900,8 @@ swiper-container.mySwiper1 {
 @media screen and (max-width: 1070px) {
     .preferencebgw{display: none;}
     .preferencecontainer{
-        height: 990px;
-        max-height: 990px;
+        height: 950px;
+        max-height: 950px;
     }
     .preference{
         margin: auto;
@@ -944,7 +944,7 @@ swiper-container.mySwiper1 {
 }
 .preferencecontainer .preferencebgm{
         height: 150%;
-        max-height: 990px;
+        max-height: 950px;
 }
 }
 .request{
