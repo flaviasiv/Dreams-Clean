@@ -11,6 +11,7 @@ main{
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding: 30px;
 }
 header {
     position: relative;
@@ -70,7 +71,7 @@ header {
     display: flex;
     margin: 0 auto;
     justify-content:space-between;
-    width:300px;
+    width:460px;
     text-align: center;
 }
 .menu-linksbtn a {
@@ -87,7 +88,7 @@ header {
 }
 .menu-linksbtn a:hover{
     color: #E0B451;
-    transition: 0.5s;
+    transition: 0.2s all ease-in-out;
 }
 .menusocial{
     right: 0;
@@ -158,12 +159,6 @@ header {
 }
 .callnow p{
     font-size: 14px;
-}
-
-.menu-linksbtn a:hover,
-.menu-linksbtn a.active {
-  transition: 0.5s ease-out;
-  letter-spacing: 1.2px;
 }
 .btn-toggle, .contactm{display: none;}
 .logo-m{
@@ -250,17 +245,17 @@ max-width: 50px;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 50px;
+  padding-top: 20px;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  height:270px
+  height:300px
   }
   .menu-links ul{
       display: block;
       margin-right: 10px;
   }
   .menu-links a {
-  padding:.25rem 2rem
+  padding: 3px 0
   }
   .menu-linksbtn{
       display: flex;
@@ -649,170 +644,6 @@ swiper-container.mySwiper1 {
     }
     .listareas{padding: 0;}
 }
-/* 
-.cardcontainer{
-    background-color: #F3F3F3;
-    width: 100%;
-    max-width: 9500px;
-    margin: auto;
-    height: 100%;
-    max-height: 470px;
-}
-.maincontainer{
-    display: flex;
-    background-color: #F3F3F3;
-    width: 100%;
-    max-width: 1350px;
-    margin: auto;
-    height: 100%;
-    max-height: 400px;
-}
-.card{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 300px;
-  height: 100%;
-  margin: auto;
-  transition: all 0.8s ease;
-}
-.thefront{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 282px;
-  height: 100%;
-  border-radius: 30px;
-  backface-visibility: hidden;
-  overflow: hidden;
-}
-.thefront img, .card__face--front img{
-  border-radius: 30px;
-  width: 100%;
-  max-width: 282px;
-  height: 427px;
-}
-.theback{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 280px;
-  height: 100%;
-  border-radius: 30px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #0C1B32;
-  padding: 30px 20px;
-  text-align: center;
-}
-.theback h2{
-  color: #E0B451;
-  margin-bottom: 30px;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-.theback p{
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-  color: #FFF;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  text-align: center;
-  margin-top: 25px;
-}
-@media screen and (max-width:1300px) {
-    .cardcontainer{
-        max-height: 870px;
-    }
-    .maincontainer{
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 24px;
-        max-width: 730px;
-    }
-    .maincontainer > div {
-        flex: 50%; 
-    }
-    .thecard{
-        margin-right: 20px;
-    }
-    .servicescontainer{
-        max-height: 1390px;
-    }
-}
-@media screen and (max-width:790px) {
-    .listareas{
-        justify-content: center;
-        text-align: left;
-        gap: 28px;
-        font-size: 14px;
-        padding-left: 5px;
-    }
-    .cardcontainer{
-        min-height: 1600px;
-        max-height: 1800px;
-    }
-    .servicestitle p{
-        margin: auto;
-        padding: 0 40;
-        font-size:14px;
-        margin-bottom: 40px;
-    }
-    .maincontainer{
-        display: block;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-    }    
-    .servicescontainer{
-        max-height: 2390px;
-    }
-}
-  .scene {
-    display: inline-block;
-    perspective: 600px;
-  }
-  
-  .card {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    height: 100%;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transform-origin: center right;
-    transition: transform 1s;
-  }
-  
-  .card.is-flipped {
-    transform: translateX(-100%) rotateY(-180deg);
-  }
-  
-  .card__face--back {
-    transform: rotateY(180deg);
-  }
-   */
-  
-  /* .card__face--front {
-  } */
-  
-
 .preferencecontainer{
     width: 100%;
     max-width: 2990px;
@@ -1044,22 +875,20 @@ text-align: center;
 swiper-container.mySwiper2 {
   width: 100%;
   height: 100%;
-  max-height: 735px;
+  max-height: 725px;
   cursor: grab;
   margin: 0 !important;
 }
 swiper-slide.swiper2 {
-  max-width: 706px;
+  max-width: 680px;
   border-radius: 30px;
   margin-left: 0px;
 }
 .swiper2 img {
-  width: 700px !important;
-  max-width: 100% !important;
+  width: 100% !important;
+  max-width: 670px !important;
   margin: auto;
-  height: 700px;
   border-radius: 32px;
-  justify-content: start;
   object-fit: cover !important;
   object-position: center;
 }
@@ -1077,7 +906,7 @@ swiper-slide.swiper2 {
         padding: 90px 0 90px 0;
     }
     swiper-container.mySwiper2 {
-      max-height: 550px;
+      max-height: 630px;
       cursor: grab;
       margin: 0 !important;
     }
@@ -1089,7 +918,6 @@ swiper-slide.swiper2 {
     .swiper2 img {
       width: 100% !important;
       margin: auto;
-      height: 500px;
       border-radius: 32px;
       justify-content: start;
       object-fit: cover !important;
@@ -1103,16 +931,14 @@ swiper-container.mySwiper2 {
   margin: 0 !important;
 }
 swiper-slide.swiper2 {  
-    max-width: 470px;
-    height: 100%;
+    max-width: 410px;
     margin: auto;
-    padding-left: 25px;
+    padding-right: 15px;
 }
 .swiper2 img {
   width: 100% !important;
-  max-width: 340px !important;
+  max-width: 410px !important;
   margin: auto;
-  height: 340px;
   border-radius: 32px;
   justify-content: start;
   object-fit: cover !important;
