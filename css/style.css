@@ -497,7 +497,7 @@ max-width: 50px;
     font-weight: 600;
     line-height: 130%;
 }
-.reveal{
+/* .reveal{
     position: relative;
     transform: translateX(-50%);
     opacity: 20%;
@@ -506,7 +506,7 @@ max-width: 50px;
 .reveal.active{
     transform: translateX(0%);
     opacity: 1;
-}
+} */
 @media screen and (max-width:1250px) {
     .aboutcontainer{
         min-height: 0;
