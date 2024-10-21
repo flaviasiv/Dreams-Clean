@@ -970,9 +970,9 @@ swiper-slide.swiper2 {
       margin: 0 !important;
     }
     swiper-slide.swiper2 {  
-            max-width: 570px;
-            height: 100%;
-            margin: 0px;
+        max-width: 570px;
+        height: 100%;
+        margin: 0px;
     }
     .swiper2 img {
       width: 100% !important;
@@ -992,7 +992,7 @@ swiper-container.mySwiper2 {
 swiper-slide.swiper2 {  
     max-width: 410px;
     margin: auto;
-    padding-right: 15px;
+    padding: 0 5px;
 }
 .swiper2 img {
   width: 100% !important;
