@@ -1058,7 +1058,7 @@ swiper-slide.swiper2 {
     width: 100%;
     max-width: 3000px;
     margin: auto;
-    padding-top: 90;
+    padding-top: 90px;
     height: 100%;
     max-height: 600px;
     background-color: #0C1B32;
@@ -1102,61 +1102,6 @@ swiper-slide.swiper2 {
     margin: auto;
     margin-top: 14px;
 }
-.mySwiper3{
-  width: 100%;
-  height: 100%;
-  max-height: 350px;
-  cursor: grab;
-  margin: 0 !important;
-}
-.swiper3 {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  max-width: 299px;
-  max-height: 300;
-  border-radius: 23px;
-  background-color: #fff;
-  margin-left: 25px;
-  padding: 30px 16px;
-}
-.swiper3 .servicescard{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-.swiper3 .servicescard svg {
-  width: 100% !important;
-  margin: auto;
-  object-position: center;
-}
-.swiper3 p{
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
-    text-align: center;
-    color: #070707;
-    margin: auto;
-    margin-top: 15px;
-}
-.swiper3 h2{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    color: #070707;
-    margin-top: 15px;
-}
-.swiper3 h6{
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 12px;
-    text-align: center;
-    color: #070707;
-    margin-top: 15px;
-}
 .selo{
     position: relative;
     max-width: 150px;
@@ -1191,34 +1136,25 @@ swiper-slide.swiper2 {
         padding: 0;
     }
     .bgs-reviews2{
-        max-width: 40;
-    right: 40;
-    bottom: 20;
+        max-width: 40px;
+    right: 40px;
+    bottom: 20px;
     }
     .bgs-reviews1{
-        max-width: 60;
-        top: 20;
-        left: 40;
+        max-width: 60px;
+        top: 20px;
+        left: 40px;
     }
     .selo img{
-        margin-top: -175px;
+        margin-top: -75px;
         width: 150px;
         position: absolute;
         justify-content: center;
     }
-    .mySwiper3{
-      margin: 50 0 !important;
-      max-height: 340px;
-    }
-    .swiper3 {
-      max-width: 100%;
-      max-height: 300px;
-      margin: auto;
-      margin-left: 0px;
-      margin-bottom: 30px;
+    .ig-embed{
+        padding-bottom: 0;
     }
 }
-
 .bgs-web{
     display: block;
     pointer-events: none;
