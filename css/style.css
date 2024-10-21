@@ -693,7 +693,7 @@ max-width: 50px;
 }
 @media screen and (max-width:980px) {
     .servicescontainer{
-        padding: 0 0 50px 20px;
+        padding: 0 0 50px;
     }
     .listareas{padding: 0;}
     .swiper1{
