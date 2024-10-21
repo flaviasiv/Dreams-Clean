@@ -1159,12 +1159,12 @@ swiper-slide.swiper2 {
 }
 .selo{
     position: relative;
-    max-width: 150;
+    max-width: 150px;
     margin: auto;
     z-index: 9999;
 }
 .selo img{
-    margin-top: -75;
+    margin-top: -75px;
     width: 150px;
     position: absolute;
     justify-content: center;
@@ -1172,15 +1172,15 @@ swiper-slide.swiper2 {
 @media screen and (max-width: 1280px) {
     .bgs-reviews2{
     position: absolute;
-    max-width: 70;
-    right: 100;
-    bottom: 10;
+    max-width: 70px;
+    right: 100px;
+    bottom: 10px;
     }
     .bgs-reviews1{
         position: absolute;
-        max-width: 70;
-        top: 50;
-        left: 130;
+        max-width: 70px;
+        top: 50px;
+        left: 130px;
     }
     
 }
