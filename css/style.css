@@ -457,7 +457,7 @@ max-width: 50px;
     max-width: 535px;
     margin: auto;
     text-align: center;
-    padding: 30 20 30 0;
+    padding: 30px 20px 30px 0;
 }
 .about h2{
     margin-top: 0px;
@@ -485,8 +485,8 @@ max-width: 50px;
     line-height: 130%;
     border: 1px solid #E0B451;
     border-radius: 8px;
-    margin: 20 -59 20 -59;
-    padding: 10 59;
+    margin: 20px -59px 20px -59px;
+    padding: 10px 59px;
     color: #E0B451;
 }
 .abouttext span{
@@ -528,7 +528,7 @@ max-width: 50px;
     }
     .abouttext{ 
         max-width: 398px;
-        padding: 30 40 30 40;
+        padding: 30px 40px 30px 40px;
     }
     .abouttext h2{
         text-align: center
@@ -546,8 +546,8 @@ max-width: 50px;
         font-size: 14px;
         text-align: center;
         max-width: 860;
-        margin: 20 -29 20 -29;
-        padding: 10 29;
+        margin: 20px -29px 20px -29px;
+        padding: 10px 29px;
     }
     .aboutimg video{
         max-width: 350px;
@@ -568,7 +568,7 @@ max-width: 50px;
     width: 100%;
     max-width: 3900px;
     margin: auto;
-    padding: 0 0 50 0;
+    padding: 0 0 50px 0;
 }
 .servicestitle{
     font-family: 'Urbanist', sans-serif;
@@ -1542,7 +1542,7 @@ footer{
         max-width: 290px;
         margin: auto;
         justify-content: space-between;
-        padding: 10 0;
+        padding: 10px 0;
     }
     .footermenu ul li a{
         font-size: 16px;
