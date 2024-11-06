@@ -173,17 +173,17 @@ display:block;
 width: 100%;
 max-width: 50px;
 }
-.call-m{display: none;}
+.call-m, .logo-m1{display: none;}
 @media only screen and (max-width: 1000px) {
-    .nonebar{display: none}
-    .contactw{display: none;}
-    .contactm{display: block;}
-    .bnts-logo{display: none}
+    .nonebar, .contactw, .bnts-logo{display: none}
+    .contactm, .logo-m1{display: block}
     .call-m{
         display: block;
         position: absolute;
         z-index: 99;
-        top: 5%;
+        top: 3%;
+        left: 50%;
+        transform: translate(-50%);
     }
   .box{
     width: fit-content;
@@ -247,21 +247,23 @@ max-width: 50px;
     background-color: #0C1B32;
   flex-direction: column;
   align-items:center;
-  margin-top: 0px;
+  margin-top: 50px;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
   padding-top: 20px;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  height:300px
+  height:280px
   }
   .menu-links ul{
       display: block;
-      margin-right: 10px;
   }
   .menu-links a {
-  padding: 3px 0
+  padding: 2px 0
+  }
+  .menusocial li a svg{
+      margin-top: 0px;
   }
   .menu-linksbtn{
       display: flex;
@@ -319,8 +321,11 @@ max-width: 50px;
   text-align: right;
   align-items: end;
   }   
-  .logo-m{
+  .logo-m1{
   margin-left: 25px;
+  display: flex;
+  position: absolute;
+    top: 10px;
   }
   .menulibtnser{
     padding-top: 20px;
@@ -700,14 +705,25 @@ max-width: 50px;
 }
 @media screen and (max-width:980px) {
     .servicescontainer{
-        padding: 0 0 50px;
+        padding: 0 0 100px;
     }
     .listareas{padding: 0;}
-    .swiper1{
-        max-width: 100%;
+    .cardinfos h6{
+        bottom: 190px;
+    }
+    .mySwiper1 {
+        padding: 0 10px;
+        height: 450px;
+        margin-bottom: 50px;
+    }
+    .swiper1 {
+      max-width: 699px;
+      height: 400px;
     }
     .swiper1 img {
-        max-width: 100%;
+      width: 600px !important;
+      max-width: 690px !important;
+      max-height: 400px;
     }
 }
 .preferencecontainer{
