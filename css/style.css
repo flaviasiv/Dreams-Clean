@@ -1543,6 +1543,17 @@ footer{
     line-height: 150%;
     padding-top: 50px;
 }
+.footer-credits, .footer-credits ul{
+ display: flex;
+ list-style: none;
+ gap: 10px;
+ padding: 10px;
+}
+.footer-credits{
+ max-width: 1200px;
+ margin: auto;
+ justify-content: space-between;
+}
 .footerimglogo2{display:none;}
 @media screen and (max-width: 770px) {
     .bgs-web{
