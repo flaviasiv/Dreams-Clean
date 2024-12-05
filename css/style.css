@@ -1524,14 +1524,28 @@ footer{
 }
 .rights{
     position: relative;
-    height: 150px;
+    display: flex;
+    position: relative;
     width: 100%;
     max-width: 9990px;
     margin: auto;
-    padding: 34px 0 50px 0;
+    padding: 0 0 50px 0;
     background-color: #0C1B32;
     align-items: center;
     text-align: center;    
+    padding-top: 50px;
+}
+.rights svg{
+    position: absolute;
+    top: 40px;
+}
+.footer-credits{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
 }
 .rights p{
     background: var(--Style, linear-gradient(90deg, #B57912 0%, #F9E741 24.48%, #8A3D14 54.68%, #DAB651 99.99%));
@@ -1541,21 +1555,18 @@ footer{
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;
-    padding-top: 50px;
 }
-.footer-credits, .footer-credits ul{
+.footer-credits ul{
  display: flex;
  list-style: none;
  gap: 10px;
  padding: 10px;
 }
-.footer-credits{
- max-width: 1200px;
- margin: auto;
- justify-content: space-between;
-}
 .footerimglogo2{display:none;}
 @media screen and (max-width: 770px) {
+    .footer-credits{
+        flex-direction: column;
+    }
     .bgs-web{
         display: none;
     }
@@ -1585,7 +1596,7 @@ footer{
         max-width: 290px;
         margin: auto;
         justify-content: space-between;
-        padding: 10px 0;
+        padding: 30px 0 0;
     }
     .footermenu ul li a{
         font-size: 16px;
@@ -1662,12 +1673,17 @@ footer{
         text-decoration: none;
     }
     .rights{
-        height: 115;
-        padding: auto;
+        height: 110px;
+        padding-top: 40px;
+    }
+    .rights svg{
+        top: 20px;
     }
     .rights p{
-        font-size: 11px;
-        padding: 30px;
+        font-size: 14px;
+    }
+    .footer-credits ul li a{
+        font-size: 14px;
     }
 }
 @media screen and (max-width:990px) {
