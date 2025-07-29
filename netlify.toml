@@ -1,0 +1,19 @@
+[[headers]]
+  for = "/*.js"  # Aplica a arquivos JavaScript
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"  # Cache de 1 ano
+
+[[headers]]
+  for = "/*.css"  # Aplica a arquivos CSS
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"  # Pasta de imagens/static files
+  [headers.values]
+    Cache-Control = "public, max-age=86400"  # Cache de 1 dia
+
+[[headers]]
+  for = "/*.html"  # HTML (cache menor para atualizações)
+  [headers.values]
+    Cache-Control = "public, max-age=3600"  # 1 hora
